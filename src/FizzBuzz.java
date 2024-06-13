@@ -18,6 +18,13 @@ class FizzBuzz {
         boolean divisibleBy5 = i % 5 == 0;
 
         // Print our appropriate result.
+        partialFizzBuzz(i, divisibleBy3, divisibleBy5);
+
+        i = i + 1;
+        return i;
+    }
+
+    private static void partialFizzBuzz(int i, boolean divisibleBy3, boolean divisibleBy5) {
         if (divisibleBy3 && divisibleBy5) {
 
             System.out.println("Fizz Buzz");
@@ -35,8 +42,5 @@ class FizzBuzz {
             System.out.println(i);
 
         }
-
-        i = i + 1;
-        return i;
     }
 }
